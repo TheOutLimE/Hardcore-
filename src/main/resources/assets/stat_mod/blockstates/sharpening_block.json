@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "stat_mod:block/sharpening_block"
+    }
+  }
+}
