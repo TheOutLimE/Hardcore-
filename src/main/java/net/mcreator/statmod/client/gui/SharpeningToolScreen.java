@@ -12,6 +12,8 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.statmod.world.inventory.SharpeningToolMenu;
+import net.mcreator.statmod.network.SharpeningToolButtonMessage;
+import net.mcreator.statmod.StatModMod;
 
 import java.util.HashMap;
 
@@ -85,6 +87,10 @@ public class SharpeningToolScreen extends AbstractContainerScreen<SharpeningTool
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
 		this.addRenderableWidget(new Button(this.leftPos + 105, this.topPos + 56, 61, 20, new TextComponent("Combine"), e -> {
+			if (true) {
+				StatModMod.PACKET_HANDLER.sendToServer(new SharpeningToolButtonMessage(0, x, y, z));
+				SharpeningToolButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}));
 	}
 }

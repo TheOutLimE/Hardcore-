@@ -29,7 +29,6 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.statmod.init.StatModModItems;
 import net.mcreator.statmod.init.StatModModEntities;
 import net.mcreator.statmod.init.StatModModEnchantments;
-import net.mcreator.statmod.init.StatModModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -47,7 +46,7 @@ public class StatModMod {
 	public StatModMod() {
 
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-		StatModModBlocks.REGISTRY.register(bus);
+
 		StatModModItems.REGISTRY.register(bus);
 		StatModModEntities.REGISTRY.register(bus);
 

@@ -229,12 +229,36 @@
       "registry_name": "sharpening_tool"
     },
     {
-      "name": "SharpeningBlock",
-      "type": "block",
-      "sortid": 14,
+      "name": "DamUp",
+      "type": "item",
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sharpening_block"
+      "registry_name": "dam_up"
+    },
+    {
+      "name": "CombineButton",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "combine_button",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tome",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tome"
     }
   ],
   "variable_elements": [
@@ -261,9 +285,10 @@
   "language_map": {
     "en_us": {
       "enchantment.stat_mod.shielding": "Shielding",
+      "item.stat_mod.dam_up": "Dam Up",
+      "item.stat_mod.tome": "Tome",
       "enchantment.stat_mod.resistance": "Resistance",
       "item.stat_mod.big_creeper_spawn_egg": "Big Creeper Spawn Egg",
-      "block.stat_mod.sharpening_block": "Sharpening Block",
       "entity.stat_mod.big_creeper": "Big Creeper"
     }
   },

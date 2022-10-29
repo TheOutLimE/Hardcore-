@@ -1,7 +1,8 @@
 {
   "enchantment.stat_mod.shielding": "Shielding",
+  "item.stat_mod.dam_up": "Dam Up",
+  "item.stat_mod.tome": "Tome",
   "enchantment.stat_mod.resistance": "Resistance",
   "item.stat_mod.big_creeper_spawn_egg": "Big Creeper Spawn Egg",
-  "block.stat_mod.sharpening_block": "Sharpening Block",
   "entity.stat_mod.big_creeper": "Big Creeper"
 }

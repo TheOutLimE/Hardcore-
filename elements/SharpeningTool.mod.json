@@ -55,6 +55,9 @@
         "type": "button",
         "data": {
           "text": "Combine",
+          "onClick": {
+            "name": "CombineButton"
+          },
           "width": 61,
           "height": 20,
           "name": "Combine",
