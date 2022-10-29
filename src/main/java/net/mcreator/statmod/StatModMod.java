@@ -26,6 +26,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.statmod.init.StatModModMobEffects;
 import net.mcreator.statmod.init.StatModModItems;
 import net.mcreator.statmod.init.StatModModEntities;
 import net.mcreator.statmod.init.StatModModEnchantments;
@@ -51,6 +52,7 @@ public class StatModMod {
 		StatModModEntities.REGISTRY.register(bus);
 
 		StatModModEnchantments.REGISTRY.register(bus);
+		StatModModMobEffects.REGISTRY.register(bus);
 
 	}
 

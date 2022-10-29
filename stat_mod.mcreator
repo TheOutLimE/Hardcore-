@@ -259,6 +259,51 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tome"
+    },
+    {
+      "name": "CombineSystem",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "combine_system",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BleedingActiveTickCondition",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleeding_active_tick_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "amplifier",
+            "type": "number"
+          },
+          {
+            "name": "duration",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bleeding",
+      "type": "potioneffect",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleeding"
     }
   ],
   "variable_elements": [
@@ -284,6 +329,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "effect.stat_mod.bleeding": "Bleeding",
       "enchantment.stat_mod.shielding": "Shielding",
       "item.stat_mod.dam_up": "Dam Up",
       "item.stat_mod.tome": "Tome",

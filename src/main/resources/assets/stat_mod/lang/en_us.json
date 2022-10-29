@@ -1,4 +1,5 @@
 {
+  "effect.stat_mod.bleeding": "Bleeding",
   "enchantment.stat_mod.shielding": "Shielding",
   "item.stat_mod.dam_up": "Dam Up",
   "item.stat_mod.tome": "Tome",
